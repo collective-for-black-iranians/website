@@ -14,6 +14,8 @@ body.logged-in header {
 }
 
 header nav {
+	display: flex;
+	justify-content: space-between;
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -25,7 +27,6 @@ header nav .identity {
 }
 
 header nav ul {
-	float: right;
 	margin-top: 8px;
 }
 
@@ -50,15 +51,93 @@ header nav li.separator::after {
 	padding: 0 5px 0 10px;
 }
 
-header nav .button {
+header nav .button a {
 	background: #fff;
 	margin-left: 15px;
 	padding: 5px 15px;
 	transition: 0.2s all ease-out;
 }
 
-header nav .button:hover {
+header nav .button a:hover {
 	text-decoration: none;
 	color: #fff;
 	background: #000;
+}
+
+header nav .menu,
+#menu {
+	display: none;
+}
+
+header nav .menu a {
+	margin-left: 0;
+	background: transparent;
+}
+
+@media only screen and (max-width: 785px) {
+
+	#wpadminbar {
+		display: none;
+	}
+
+	body.logged-in header {
+		top: 0;
+	}
+
+	header {
+		padding: 12px 10px;
+		height: 60px;
+	}
+
+	header nav .identity {
+		width: 165px;
+	}
+
+	header nav ul {
+		margin-top: 0;
+	}
+
+	header nav li {
+		display: none;
+	}
+
+	header nav .button {
+		display: inline-block;
+	}
+
+	header nav .menu a {
+		display: inline-block;
+		width: 40px;
+		padding: 0 15px;
+	}
+
+	header nav .menu a:hover {
+		background-color: transparent;
+	}
+
+	#menu {
+		display: block;
+		height: 0;
+		overflow: hidden;
+		transform: height 0.2s ease-out;
+		background: #000;
+		color: #fff;
+		margin-top: 12px;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	#menu.open {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	#menu a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 15px;
+		font-size: 1.2em;
+	}
+
 }

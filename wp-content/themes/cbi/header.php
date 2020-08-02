@@ -16,8 +16,18 @@
 					<li class="separator"><a href="/work">Our Work</a></li>
 					<li class="separator"><a href="/chapters">Chapters</a></li>
 					<li><a href="/contact">Contact Us</a></li>
-					<li><a href="/donate" class="button">Donate</a></li>
+					<li class="button"><a href="/donate">Donate</a></li>
+					<li class="menu button"><a href="#menu"><i class="fa fa-bars"></i></a></li>
 				</ul>
 			</nav>
+			<div id="menu">
+				<ul>
+					<li><a href="/about">About</a></li>
+					<li><a href="/work">Our Work</a></li>
+					<li><a href="/chapters">Chapters</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+					<li><a href="/donate">Donate</a></li>
+				</ul>
+			</div>
 		</header>
 		<div id="content">

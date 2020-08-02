@@ -48,7 +48,8 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 900px;
+	max-width: 930px;
+	padding: 0 15px;
 }
 
 h2 {
