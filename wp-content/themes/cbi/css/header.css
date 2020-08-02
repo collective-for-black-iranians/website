@@ -1,0 +1,64 @@
+header {
+	position: fixed;
+	background: #A27F71;
+	padding: 20px;
+	width: 100%;
+	height: 90px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.logged-in header {
+	top: 32px;
+}
+
+header nav {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header nav .identity {
+	width: 225px;
+	height: auto;
+	vertical-align: top;
+}
+
+header nav ul {
+	float: right;
+	margin-top: 8px;
+}
+
+header nav li {
+	display: inline;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+header nav li a {
+	color: #000;
+	text-decoration: none;
+}
+
+header nav li a:hover {
+	text-decoration: underline;
+}
+
+header nav li.separator::after {
+	font-weight: normal;
+	content: "|";
+	padding: 0 5px 0 10px;
+}
+
+header nav .button {
+	background: #fff;
+	margin-left: 15px;
+	padding: 5px 15px;
+	transition: 0.2s all ease-out;
+}
+
+header nav .button:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+}

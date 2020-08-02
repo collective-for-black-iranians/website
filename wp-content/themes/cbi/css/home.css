@@ -1,0 +1,118 @@
+body.home #content {
+	background-image: url("../img/person.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 735px calc(100vh - 400px);
+	background-size: 265px auto;
+}
+
+body.home section {
+	position: relative;
+	min-height: 100vh;
+}
+
+body.home section.narrow {
+	width: 60%;
+}
+
+body.home .scrolly h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+body.home img.wide {
+	width: 100%;
+	height: auto;
+}
+
+body.home .head-room {
+	margin-top: calc(50vh - 45px);
+}
+
+body.home .leg-room {
+	margin-bottom: 50vh;
+}
+
+body.home img.logo {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+}
+
+body.home .our-work {
+	background: #fff;
+	min-height: calc(100vh - 90px - 30px);
+}
+
+body.home .our-work h2 {
+	font-weight: 600;
+	text-align: center;
+	padding: 15vh 0 10vh 0;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+body.home .our-work ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+body.home .our-work a {
+	position: relative;
+	display: block;
+	width: 233px;
+	height: 233px;
+	color: #000;
+	background-color: #ADB8AE;
+	text-decoration: none;
+}
+
+body.home .our-work a .label {
+	position: absolute;
+	top: 50%;
+	left: 16.5px;
+	width: 200px;
+	transform: translateY(-50%);
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 38px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+body.home .our-work a .hover {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 233px;
+	height: 233px;
+	padding: 40px 25px;
+	font-size: 20px;
+	line-height: 28px;
+	background-color: #D0DDD1;
+	transition: 0.2s opacity ease-out;
+}
+
+body.home .our-work a .wide {
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+body.home .our-work a:hover .hover {
+	opacity: 1;
+}
+
+body.home .our-work a .arrow {
+	position: absolute;
+	font-size: 14px;
+	bottom: 25px;
+	right: 25px;
+}

@@ -1,0 +1,16 @@
+/*
+
+Theme Name: Collective For Black Iranians
+Author: Dan Phiffer
+Author URI: https://phiffer.org/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+@import url("css/reset.css");
+@import url("css/typography.css");
+@import url("css/fontawesome/css/all.min.css");
+@import url("css/header.css");
+@import url("css/footer.css");
+@import url("css/home.css");

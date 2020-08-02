@@ -1,0 +1,63 @@
+footer {
+	color: #fff;
+	background: #000;
+	font-size: 14px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer .container {
+	padding: 40px 0 60px 0;
+	max-width: 1024px;
+}
+
+footer nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+footer nav .identity {
+	font-size: 22px;
+}
+
+footer nav ul {
+	display: flex;
+	width: 50%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+footer nav li {
+	display: inline;
+}
+
+footer nav .button {
+	display: inline-block;
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 40px;
+	margin-top: -25px;
+	transition: 0.2s all ease-out;
+}
+
+footer nav .button:hover {
+	color: #000;
+	background: #fff;
+}
+
+footer .legal {
+	margin-top: 30px;
+	font-size: 12px;
+	text-align: right;
+}
