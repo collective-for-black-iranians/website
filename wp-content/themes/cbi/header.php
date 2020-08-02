@@ -1,3 +1,14 @@
+<?php
+
+the_post();
+global $post;
+
+$body_class = '';
+if (! empty($post) ) {
+	$body_class = $post->post_name;
+}
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +18,7 @@
 		<link rel="stylesheet" href="<?php asset_url('style.css'); ?>">
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class($body_class); ?>>
 		<header>
 			<nav>
 				<a href="/"><img src="<?php asset_url('img/logotype.png'); ?>" alt="Collective For Black Iranians" class="identity"></a>
@@ -16,7 +27,7 @@
 					<li class="separator"><a href="/work">Our Work</a></li>
 					<li class="separator"><a href="/chapters">Chapters</a></li>
 					<li><a href="/contact">Contact Us</a></li>
-					<li class="button"><a href="/donate">Donate</a></li>
+					<li class="donate button"><a href="/donate">Donate</a></li>
 					<li class="menu button"><a href="#menu"><i class="fa fa-bars"></i></a></li>
 				</ul>
 			</nav>

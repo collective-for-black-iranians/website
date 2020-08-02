@@ -9,10 +9,6 @@ header {
 	z-index: 1;
 }
 
-body.logged-in header {
-	top: 32px;
-}
-
 header nav {
 	display: flex;
 	justify-content: space-between;
@@ -72,6 +68,14 @@ header nav .menu,
 header nav .menu a {
 	margin-left: 0;
 	background: transparent;
+}
+
+#content {
+	padding-top: 90px;
+}
+
+header nav .donate a {
+	box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
 }
 
 @media only screen and (max-width: 785px) {
@@ -138,6 +142,10 @@ header nav .menu a {
 		text-decoration: none;
 		padding: 10px 15px;
 		font-size: 1.2em;
+	}
+
+	#content {
+		padding-top: 60px;
 	}
 
 }

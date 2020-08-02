@@ -1,5 +1,9 @@
 <?php
 
+require_once __DIR__ . '/lib/blocks.php';
+
+add_filter('show_admin_bar', '__return_false');
+
 add_action('after_setup_theme', function() {
 	add_theme_support('title-tag');
 });

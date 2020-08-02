@@ -1,0 +1,78 @@
+body.about .tabs {
+	background-image: url("../img/baagh.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw auto;
+	min-height: 100vh;
+}
+
+body.about .tabs nav {
+	display: flex;
+	padding-top: 5vw;
+	justify-content: space-between;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+body.about .tabs nav a {
+	text-decoration: none;
+	color: #000;
+	font-size: 36px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 40px;
+}
+
+body.about .tabs nav .selected {
+	background-image: url("../img/paint.png");
+	background-size: 100% 100%;
+}
+
+body.about .block-about-person {
+	background: #fff;
+	padding: 20px 20px 40px 20px;
+	margin-bottom: 40px;
+	box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+body.about .tab {
+	display: none;
+	padding-top: 300px;
+}
+
+body.about .tab.selected {
+	display: block;
+}
+
+body.about .person-inner {
+	display: flex;
+}
+
+body.about .person-text {
+	padding: 0 4% 0 6%;
+}
+
+body.about .person-image img {
+	width: 260px;
+	height: auto;
+}
+
+body.about .block-about-text {
+	background: #fff;
+	padding: 40px;
+	margin-bottom: 40px;
+	box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+body.about .block-about-text h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+body.about .text-body {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body.about .text-body p {
+	margin-bottom: 1em;
+}
