@@ -95,3 +95,8 @@ h4 {
 	line-height: 38px;
 	padding-bottom: 75px;
 }
+
+body.error404 .error {
+	padding: 40px 0 120px 0;
+	min-height: calc(100vh - 190px - 90px);
+}
