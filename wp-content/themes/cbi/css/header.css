@@ -47,19 +47,6 @@ header nav li.separator::after {
 	padding: 0 5px 0 10px;
 }
 
-header nav .button a {
-	background: #fff;
-	margin-left: 15px;
-	padding: 5px 15px;
-	transition: 0.2s all ease-out;
-}
-
-header nav .button a:hover {
-	text-decoration: none;
-	color: #fff;
-	background: #000;
-}
-
 header nav .menu,
 #menu {
 	display: none;
@@ -72,10 +59,6 @@ header nav .menu a {
 
 #content {
 	padding-top: 90px;
-}
-
-header nav .donate a {
-	box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
 }
 
 @media only screen and (max-width: 785px) {
@@ -105,7 +88,8 @@ header nav .donate a {
 		display: none;
 	}
 
-	header nav .button {
+	header nav .donate,
+	header nav .menu {
 		display: inline-block;
 	}
 

@@ -27,8 +27,8 @@ if (! empty($post) ) {
 					<li class="separator"><a href="/work">Our Work</a></li>
 					<li class="separator"><a href="/chapters">Chapters</a></li>
 					<li><a href="/contact">Contact Us</a></li>
-					<li class="donate button"><a href="/donate">Donate</a></li>
-					<li class="menu button"><a href="#menu"><i class="fa fa-bars"></i></a></li>
+					<li class="donate"><a href="/donate" class="button">Donate</a></li>
+					<li class="menu"><a href="#menu"><i class="fa fa-bars"></i></a></li>
 				</ul>
 			</nav>
 			<div id="menu">

@@ -39,7 +39,7 @@ footer nav li {
 	display: inline;
 }
 
-footer nav .button {
+footer nav .social a {
 	display: inline-block;
 	border: 1px solid #fff;
 	width: 50px;
@@ -51,7 +51,7 @@ footer nav .button {
 	transition: 0.2s all ease-out;
 }
 
-footer nav .button:hover {
+footer nav .social a:hover {
 	color: #000;
 	background: #fff;
 }

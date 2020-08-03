@@ -2,7 +2,7 @@
 
 	$(window).ready(function() {
 
-		// Mobile nav
+		// Mobile nav menu toggle
 		$('header nav .menu').click(function(e) {
 			e.preventDefault();
 			$('#menu').toggleClass('open');
@@ -15,7 +15,7 @@
 			}
 		});
 
-		// About page tabs
+		// About page: tab behaviors
 		function update_tabs() {
 			var selected = location.hash.match(/#(.+)$/);
 			if (selected) {
@@ -34,7 +34,7 @@
 		window.onhashchange = update_tabs;
 		update_tabs();
 
-		// About page resize to show full image
+		// About page: resize to show full image
 		function about_resize() {
 			var ratio = 3827 / 1200; // baagh.jpg
 			var width = $(document.body).width();
@@ -43,6 +43,9 @@
 		}
 		$(window).resize(about_resize);
 		about_resize();
+
+		// Donate page: turn link into a button
+		$('body.donate .page-content a').addClass('button');
 	});
 
 })(jQuery);
