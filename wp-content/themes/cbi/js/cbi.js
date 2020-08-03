@@ -1,6 +1,8 @@
 (function($) {
 
 	$(window).ready(function() {
+
+		// Mobile nav
 		$('header nav .menu').click(function(e) {
 			e.preventDefault();
 			$('#menu').toggleClass('open');
@@ -13,6 +15,7 @@
 			}
 		});
 
+		// About page tabs
 		function update_tabs() {
 			var selected = location.hash.match(/#(.+)$/);
 			if (selected) {
@@ -28,9 +31,18 @@
 				$('.tabs nav a[href="#' + id + '"]').addClass('selected');
 			}
 		}
-
 		window.onhashchange = update_tabs;
 		update_tabs();
+
+		// About page resize to show full image
+		function about_resize() {
+			var ratio = 3827 / 1200; // baagh.jpg
+			var width = $(document.body).width();
+			var height = width * ratio;
+			$('body.about section.tabs').css('height', height + 'px');
+		}
+		$(window).resize(about_resize);
+		about_resize();
 	});
 
 })(jQuery);

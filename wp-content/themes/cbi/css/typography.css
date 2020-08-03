@@ -46,6 +46,10 @@ body {
 	background-attachment: fixed;
 }
 
+a {
+	color: #000;
+}
+
 b, strong {
 	font-weight: bold;
 }
