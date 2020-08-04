@@ -72,6 +72,32 @@
 			update_page();
 			$(window).resize(update_page);
 		}
+
+		// Advocacy page
+		if ($(document.body).hasClass('advocacy')) {
+			function update_page() {
+				var page_width = $(document.body).width();
+				var fixed_height = $('.advocacy-video').height();
+				var fixed_width = $('.advocacy-video').width();
+				var scrolly_height = $('.advocacy-top').height() + $('.advocacy-bottom').height();
+				$('.advocacy-bottom').css('top', ($('.advocacy-top').height() + fixed_height) + 'px');
+				$('#advocacy-content').css('height', (fixed_height + scrolly_height) + 'px');
+			}
+			setTimeout(function() {
+				update_page();
+			}, 0);
+			$(window).resize(update_page);
+
+			$('.advocacy-video-next').click(function(e) {
+				$('.advocacy-video-intro, .advocacy-video-next').hide();
+				$('.advocacy-video-embed, .advocacy-video-prev').show();
+			});
+
+			$('.advocacy-video-prev').click(function(e) {
+				$('.advocacy-video-embed, .advocacy-video-prev').hide();
+				$('.advocacy-video-intro, .advocacy-video-next').show();
+			});
+		}
 	});
 
 })(jQuery);
