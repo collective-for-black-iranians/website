@@ -14,7 +14,7 @@ $sections = array();
 		</div>
 	</div>
 </section>
-<section class="tabs">
+<section class="tabs resize-bg">
 	<nav>
 		<a href="#collective" class="selected">Our Collective</a>
 		<a href="#story">Our Story</a>

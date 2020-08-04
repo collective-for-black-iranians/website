@@ -34,15 +34,23 @@
 		window.onhashchange = update_tabs;
 		update_tabs();
 
-		// About page: resize to show full image
-		function about_resize() {
-			var ratio = 3827 / 1200; // baagh.jpg
+		// Resize #content to show full background
+		function bg_resize() {
+			var bg_imgs = {
+				about: 3827 / 1200,
+				work: 828 / 1200
+			};
 			var width = $(document.body).width();
-			var height = width * ratio;
-			$('body.about section.tabs').css('height', height + 'px');
+			for (slug in bg_imgs) {
+				if ($(document.body).hasClass(slug)) {
+					var ratio = bg_imgs[slug];
+					var height = width * ratio;
+					$('.resize-bg').css('height', height + 'px');
+				}
+			}
 		}
-		$(window).resize(about_resize);
-		about_resize();
+		$(window).resize(bg_resize);
+		bg_resize();
 
 		// Donate page: turn link into a button
 		$('body.donate .page-content a').addClass('button');

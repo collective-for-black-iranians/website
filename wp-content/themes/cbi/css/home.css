@@ -61,71 +61,6 @@ body.home .our-work h2 {
 	line-height: 48px;
 }
 
-body.home .our-work ul {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-}
-
-body.home .our-work li {
-	display: block;
-	width: 233px;
-	height: 233px;
-}
-
-body.home .our-work a {
-	position: relative;
-	display: block;
-	height: 100%;
-	color: #000;
-	background-color: #ADB8AE;
-	text-decoration: none;
-}
-
-body.home .our-work a .label {
-	position: absolute;
-	top: 50%;
-	left: 16.5px;
-	width: calc(100% - 33px);
-	transform: translateY(-50%);
-	font-size: 28px;
-	font-weight: bold;
-	line-height: 38px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-body.home .our-work a .hover {
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 40px 25px;
-	font-size: 20px;
-	line-height: 28px;
-	background-color: #D0DDD1;
-	transition: 0.2s opacity ease-out;
-}
-
-body.home .our-work a .wide {
-	padding-left: 20px;
-	padding-right: 0;
-}
-
-body.home .our-work a:hover .hover {
-	opacity: 1;
-}
-
-body.home .our-work a .arrow {
-	position: absolute;
-	font-size: 14px;
-	bottom: 25px;
-	right: 25px;
-}
-
 @media only screen and (max-width: 785px) {
 
 	body.home .scrolly h2 {
@@ -148,20 +83,6 @@ body.home .our-work a .arrow {
 		margin-top: 10vh;
 		font-size: 36px;
 		line-height: 36px;
-	}
-
-	body.home .our-work li {
-		width: calc(33vw - 20px);
-		height: calc(33vw - 20px);
-	}
-
-	body.home .our-work a .label {
-		font-size: 18px;
-		line-height: 22px;
-	}
-
-	body.home .our-work .hover {
-		display: none;
 	}
 }
 
