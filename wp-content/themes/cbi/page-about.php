@@ -31,9 +31,9 @@ $sections = array();
 
 			foreach ($blocks as $block) {
 				if ($block['name'] == 'acf/about-person') {
-					include __DIR__ . '/lib/block-about-person.php';
+					include __DIR__ . '/block-about-person.php';
 				} else if ($block['name'] == 'acf/about-text') {
-					include __DIR__ . '/lib/block-about-text.php';
+					include __DIR__ . '/block-about-text.php';
 				}
 			}
 

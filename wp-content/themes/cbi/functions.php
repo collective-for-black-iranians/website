@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/lib/blocks.php';
+require_once __DIR__ . '/blocks.php';
 
 add_filter('show_admin_bar', '__return_false');
 

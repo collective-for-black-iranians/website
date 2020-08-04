@@ -38,7 +38,8 @@
 		function bg_resize() {
 			var bg_imgs = {
 				about: 3827 / 1200,
-				work: 828 / 1200
+				work: 828 / 1200,
+				voices: 3125 / 1200
 			};
 			var width = $(document.body).width();
 			for (slug in bg_imgs) {
@@ -54,6 +55,23 @@
 
 		// Donate page: turn link into a button
 		$('body.donate .page-content a').addClass('button');
+
+		// Our Voices page
+		if ($(document.body).hasClass('voices')) {
+			function update_page() {
+				var page_width = $(document.body).width();
+				var fixed_height = $('body.voices .fixed').height();
+				var fixed_width = $('body.voices .fixed').width();
+				var scrolly_height = $('body.voices .scrolly').height();
+				if (fixed_width == 930) {
+					$('body.voices .fixed').css('left', ((page_width - 930) / 2) + 'px');
+				}
+				$('body.voices .scrolly').css('top', fixed_height);
+				$('#voices-content').css('height', fixed_height + scrolly_height);
+			}
+			update_page();
+			$(window).resize(update_page);
+		}
 	});
 
 })(jQuery);

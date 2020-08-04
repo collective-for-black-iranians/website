@@ -89,3 +89,54 @@ body.work .our-work-links a:hover .label {
 body.work .our-work-links .hover {
 	display: none;
 }
+
+body.voices .intro {
+	text-align: center;
+}
+
+body.voices .resize-bg {
+	background-image: url("../img/voices-bg.jpg");
+	background-size: 100vw auto;
+}
+
+body.voices .fixed {
+	position: fixed;
+	z-index: 0;
+}
+
+body.voices .scrolly {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	width: 100vw;
+}
+
+body.voices #voices-content {
+	position: relative;
+}
+
+body.voices .voices-links {
+	padding-top: 40px;
+}
+
+body.voices .block-voices-link {
+	margin-top: 220px;
+	text-align: center;
+}
+
+body.voices .block-voices-link h3 {
+	display: inline-block;
+	background: #E8E4DC;
+	padding: 0 5px;
+	font-weight: normal;
+}
+
+body.voices .voices-link-image {
+	max-width: 675px;
+	margin: 20px auto 0 auto;
+}
+
+body.voices .voices-link-image img {
+	width: 100%;
+	height: auto;
+}
