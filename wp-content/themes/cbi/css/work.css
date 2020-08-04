@@ -140,3 +140,56 @@ body.voices .voices-link-image img {
 	width: 100%;
 	height: auto;
 }
+
+body.education {
+	background-color: #f9f7f6;
+	background-repeat: no-repeat;
+	background-image: url("../img/education-bg.jpg");
+	background-size: 100vw auto;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+body.education .intro {
+	min-height: calc(100vh - 120px);
+	background: #E8E4DC;
+}
+
+body.education .videos {
+	margin-top: calc(100vh - 90px);
+	color: #fff;
+	background: #562E2C;
+	padding-bottom: 100px;
+}
+
+.block-education-video {
+	padding-top: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.education-video-image {
+	max-width: 675px;
+	margin: 20px auto 0 auto;
+}
+
+.education-video-image img {
+	width: 100%;
+	height: auto;
+}
+
+body.education .books {
+	background-image: url("../img/bg.jpg");
+	background-size: 100vw auto;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.books-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-education-book {
+	width: calc(33% - 25px);
+}

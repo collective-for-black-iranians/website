@@ -1,6 +1,6 @@
 {
     "key": "group_5f2712598d544",
-    "title": "Text Block",
+    "title": "About Text Block",
     "fields": [
         {
             "key": "field_5f27126326449",
@@ -58,5 +58,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1596402919
+    "modified": 1596556799
 }

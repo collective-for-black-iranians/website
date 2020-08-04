@@ -88,6 +88,11 @@ h4 {
 	margin-bottom: 15px;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .page-title {
 	font-weight: bold;
 	font-size: 45px;

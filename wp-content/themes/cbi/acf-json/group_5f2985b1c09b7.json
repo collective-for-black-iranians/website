@@ -1,28 +1,9 @@
 {
-    "key": "group_5f270c9b9de8e",
-    "title": "About Person Block",
+    "key": "group_5f2985b1c09b7",
+    "title": "Education Book Block",
     "fields": [
         {
-            "key": "field_5f270ca110020",
-            "label": "Name",
-            "name": "name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f270dff43b45",
+            "key": "field_5f2985b720569",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -41,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5f270e1443b47",
-            "label": "Description",
-            "name": "description",
-            "type": "wysiwyg",
+            "key": "field_5f2985bf2056a",
+            "label": "Author",
+            "name": "author",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -54,14 +35,14 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "visual",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_5f270e0f43b46",
-            "label": "Image",
+            "key": "field_5f2985c52056b",
+            "label": "Cover image",
             "name": "image",
             "type": "image",
             "instructions": "",
@@ -89,7 +70,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/about-person"
+                "value": "acf\/education-book"
             }
         ]
     ],
@@ -101,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1596556809
+    "modified": 1596556764
 }

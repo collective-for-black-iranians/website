@@ -1,28 +1,9 @@
 {
-    "key": "group_5f270c9b9de8e",
-    "title": "About Person Block",
+    "key": "group_5f29857fddac9",
+    "title": "Education Video Block",
     "fields": [
         {
-            "key": "field_5f270ca110020",
-            "label": "Name",
-            "name": "name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f270dff43b45",
+            "key": "field_5f2985850f664",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -41,27 +22,8 @@
             "maxlength": ""
         },
         {
-            "key": "field_5f270e1443b47",
-            "label": "Description",
-            "name": "description",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "visual",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_5f270e0f43b46",
-            "label": "Image",
+            "key": "field_5f298a4e3224b",
+            "label": "Placeholder image",
             "name": "image",
             "type": "image",
             "instructions": "",
@@ -72,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
+            "return_format": "array",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -82,6 +44,22 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5f2985900f665",
+            "label": "Video embed",
+            "name": "embed",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
         }
     ],
     "location": [
@@ -89,7 +67,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/about-person"
+                "value": "acf\/education-video"
             }
         ]
     ],
@@ -101,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1596556809
+    "modified": 1596557923
 }
