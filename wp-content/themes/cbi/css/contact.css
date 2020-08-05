@@ -1,0 +1,20 @@
+#contact-content {
+	background-image: url('../img/contact-bg.jpg');
+	background-size: 100vw auto;
+}
+
+body.contact .page-content {
+	height: 240px;
+}
+
+body.contact .container {
+	max-width: 700px;
+}
+
+body.contact #contact-form {
+	padding-top: 120px;
+}
+
+.contact-response {
+	font-weight: bold;
+}

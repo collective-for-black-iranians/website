@@ -9,6 +9,11 @@ add_action('after_setup_theme', function() {
 	add_theme_support('title-tag');
 });
 
+add_action('admin_menu', function() {
+	remove_menu_page('edit.php');
+	remove_menu_page('edit-comments.php');
+});
+
 add_action('wp_enqueue_scripts', function() {
 	list($src, $version) = get_asset_url('js/cbi.js', true);
 	wp_enqueue_script('cbi', $src, array(

@@ -39,7 +39,8 @@
 			var bg_imgs = {
 				about: 3827 / 1200,
 				work: 828 / 1200,
-				voices: 3125 / 1200
+				voices: 3125 / 1200,
+				contact: 1621 / 1200
 			};
 			var width = $(document.body).width();
 			for (slug in bg_imgs) {

@@ -47,28 +47,9 @@ body.chapters h2 {
 	padding: 40px 0;
 }
 
-.chapters-form #form {
-	margin-top: 20px;
-}
-
-.chapters-form .button {
-	border: none;
-	margin-left: 0;
-	font-family: 'Proxima Nova', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	margin-top: 20px;
-}
-
 .chapters-response {
 	font-weight: bold;
 	margin: 110px 0 20px 0;
-}
-
-.chapters-form .acf-fields > .acf-field {
-	padding-left: 0;
-	padding-right: 0;
-	border-top: none;
 }
 
 .acf-fields > .acf-field[data-name="flex-fields"] {

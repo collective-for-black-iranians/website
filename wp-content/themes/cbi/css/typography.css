@@ -141,3 +141,22 @@ body.error404 .error {
 	color: #fff;
 	background: #000;
 }
+
+#form {
+	margin-top: 20px;
+}
+
+#form .button {
+	border: none;
+	margin-left: 0;
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#form .acf-fields > .acf-field {
+	padding-left: 0;
+	padding-right: 0;
+	border-top: none;
+}
