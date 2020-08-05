@@ -100,6 +100,28 @@ add_action('acf/init', function() {
 		'mode' => 'edit',
 		'render_callback' => 'block_advocacy_call'
 	));
+
+	acf_register_block_type(array(
+		'name' => 'chapters-chapter',
+		'title' => 'Chapter',
+		'description' => 'A chapter.',
+		'category' => 'common',
+		'icon' => 'location',
+		'post_types' => array('page'),
+		'mode' => 'edit',
+		'render_callback' => 'block_chapters_chapter'
+	));
+
+	acf_register_block_type(array(
+		'name' => 'chapters-form',
+		'title' => 'Chapter Form',
+		'description' => 'Send a request to create a new chapter.',
+		'category' => 'common',
+		'icon' => 'feedback',
+		'post_types' => array('page'),
+		'mode' => 'edit',
+		'render_callback' => 'block_chapters_form'
+	));
 });
 
 add_filter('allowed_block_types', function($block_types, $post) {
@@ -120,6 +142,9 @@ add_filter('allowed_block_types', function($block_types, $post) {
 		$allowed[] = 'acf/advocacy-fact';
 		$allowed[] = 'acf/advocacy-message';
 		$allowed[] = 'acf/advocacy-call';
+	} else if ($post->post_name == 'chapters') {
+		$allowed[] = 'acf/chapters-chapter';
+		$allowed[] = 'acf/chapters-form';
 	}
 	return $allowed;
 }, 10, 2);
@@ -163,4 +188,14 @@ function block_advocacy_message($block) {
 function block_advocacy_call($block) {
 	global $blocks;
 	$blocks['call'] = $block;
+}
+
+function block_chapters_chapter($block) {
+	global $blocks;
+	$blocks['chapters'][] = $block;
+}
+
+function block_chapters_form($block) {
+	global $blocks;
+	$blocks['form'] = $block;
 }

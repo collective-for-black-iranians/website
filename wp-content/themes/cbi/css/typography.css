@@ -80,6 +80,7 @@ h3 {
 	line-height: 42px;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 h4 {
@@ -91,6 +92,15 @@ h4 {
 img {
 	width: 100%;
 	height: auto;
+}
+
+ul {
+	margin: 1em 0;
+}
+
+ul li {
+	list-style: circle;
+	margin-left: 1.5em;
 }
 
 .page-title {
