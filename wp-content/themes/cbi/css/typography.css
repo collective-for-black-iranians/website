@@ -94,11 +94,11 @@ img {
 	height: auto;
 }
 
-ul {
+#content ul {
 	margin: 1em 0;
 }
 
-ul li {
+#content ul li {
 	list-style: circle;
 	margin-left: 1.5em;
 }
