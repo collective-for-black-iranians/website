@@ -94,15 +94,6 @@ img {
 	height: auto;
 }
 
-#content ul {
-	margin: 1em 0;
-}
-
-#content ul li {
-	list-style: circle;
-	margin-left: 1.5em;
-}
-
 .page-title {
 	font-weight: bold;
 	font-size: 45px;
@@ -123,9 +114,13 @@ img {
 	line-height: 38px;
 }
 
+.clear {
+	clear: both;
+}
+
 body.error404 .error {
 	padding: 40px 0 120px 0;
-	min-height: calc(100vh - 190px - 90px);
+	min-height: calc(100vh - 190px - 75px);
 }
 
 .button {

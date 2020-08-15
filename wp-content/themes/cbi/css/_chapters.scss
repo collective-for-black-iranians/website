@@ -45,6 +45,15 @@ body.chapters h2 {
 .chapters-form {
 	background: #E5E2D9;
 	padding: 40px 0;
+
+	ul {
+		margin: 1em 0;
+	}
+
+	 ul li {
+		list-style: circle;
+		margin-left: 1.5em;
+	}
 }
 
 .chapters-response {

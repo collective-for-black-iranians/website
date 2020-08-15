@@ -45,3 +45,6 @@ $blocks = array(
 		?>
 	</div>
 </section>
+<?php
+
+get_footer();

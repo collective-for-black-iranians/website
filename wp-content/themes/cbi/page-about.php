@@ -43,7 +43,6 @@ $sections = array();
 
 		?>
 	</div>
-	<div class="image-credit">Website Artwork by <a href="https://www.minamjafari.com/art">Mina M. Jafari</a></div>
 </section>
 <?php
 
