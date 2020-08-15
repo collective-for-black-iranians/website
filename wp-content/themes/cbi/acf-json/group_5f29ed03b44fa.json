@@ -164,7 +164,7 @@
                         "id": ""
                     },
                     "choices": {
-                        ": Select a country": ": Select a country",
+                        "Select a country": "Select a country",
                         "AF": "Afghanistan",
                         "AX": "Åland Islands",
                         "AL": "Albania",
@@ -531,5 +531,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1596590579
+    "modified": 1597527522
 }
