@@ -32,11 +32,11 @@ body.home .wide img {
 }
 
 body.home .head-room {
-	margin-top: calc(50vh - 45px);
+	margin-top: calc(12.5vh - 75px);
 }
 
 body.home .leg-room {
-	margin-bottom: 50vh;
+	margin-bottom: 12.5vh;
 }
 
 body.home img.logo {
@@ -50,13 +50,14 @@ body.home img.logo {
 
 body.home .our-work {
 	background: #EBE7E2;
-	min-height: calc(100vh - 75px - 30px);
+	padding-bottom: 60px;
+	min-height: 0;
 }
 
 body.home .our-work h2 {
 	font-weight: 600;
 	text-align: center;
-	padding: 15vh 0 10vh 0;
+	padding: 40px 0 30px 0;
 	font-size: 48px;
 	line-height: 48px;
 }
