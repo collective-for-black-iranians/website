@@ -40,7 +40,8 @@
 				about: 3827 / 1200,
 				work: 828 / 1200,
 				voices: 3125 / 1200,
-				contact: 1621 / 1200
+				contact: 1621 / 1200,
+				donate: 875 / 1200
 			};
 			var width = $(document.body).width();
 			for (slug in bg_imgs) {
@@ -53,9 +54,6 @@
 		}
 		$(window).resize(bg_resize);
 		bg_resize();
-
-		// Donate page: turn link into a button
-		$('body.donate .page-content a').addClass('button');
 
 		// Our Voices page
 		if ($(document.body).hasClass('voices')) {
@@ -98,6 +96,24 @@
 				$('.advocacy-video-embed, .advocacy-video-prev').hide();
 				$('.advocacy-video-intro, .advocacy-video-next').show();
 			});
+		}
+
+		// Donate page
+		if ($(document.body).hasClass('donate')) {
+			$('body.donate .page-content a').addClass('button');
+			function update_page() {
+				var page_width = $(document.body).width();
+				var fixed_height = $('body.donate .fixed').height() + 75;
+				var fixed_width = $('body.donate .fixed').width();
+				var scrolly_height = $('body.donate .scrolly').height();
+				if (fixed_width == 930) {
+					$('body.donate .fixed').css('left', ((page_width - 930) / 2) + 'px');
+				}
+				$('body.donate .scrolly').css('top', fixed_height);
+				$('#donate-content').css('height', fixed_height + scrolly_height - 75);
+			}
+			update_page();
+			$(window).resize(update_page);
 		}
 	});
 

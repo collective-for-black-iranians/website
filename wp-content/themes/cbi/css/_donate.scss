@@ -1,7 +1,33 @@
-body.donate .page-content a {
-	font-weight: bold;
-	text-transform: uppercase;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	margin-left: 0;
+body.donate {
+
+	#voices-content {
+		position: relative;
+	}
+
+	.page-content a.button {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin-left: 0;
+	}
+
+	.resize-bg {
+		background-image: url("../img/donate-bg.jpg");
+		background-size: 100vw auto;
+	}
+
+	.fixed {
+		position: fixed;
+		z-index: 0;
+	}
+
+	.scrolly {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		width: 100vw;
+	}
+
+
 }
