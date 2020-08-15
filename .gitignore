@@ -1,4 +1,5 @@
 .DS_Store
+node_modules
 /index.php
 /license.txt
 /wp-activate.php
