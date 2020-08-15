@@ -288,6 +288,15 @@ body.advocacy {
 	width: 100%;
 }
 
+.advocacy-video-placeholder {
+	display: none;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
 .advocacy-video-prev {
 	display: none;
 	position: absolute;
@@ -305,6 +314,15 @@ body.advocacy {
 	transform: translateY(-50%);
 	font-size: 30px;
 	cursor: pointer;
+}
+
+.advocacy-video-scroll {
+	color: #fff;
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
 }
 
 .advocacy-facts {

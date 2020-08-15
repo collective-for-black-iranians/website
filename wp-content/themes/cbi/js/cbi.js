@@ -89,11 +89,11 @@
 
 			$('.advocacy-video-next').click(function(e) {
 				$('.advocacy-video-intro, .advocacy-video-next').hide();
-				$('.advocacy-video-embed, .advocacy-video-prev').show();
+				$('.advocacy-video-media, .advocacy-video-prev').show();
 			});
 
 			$('.advocacy-video-prev').click(function(e) {
-				$('.advocacy-video-embed, .advocacy-video-prev').hide();
+				$('.advocacy-video-media, .advocacy-video-prev').hide();
 				$('.advocacy-video-intro, .advocacy-video-next').show();
 			});
 		}

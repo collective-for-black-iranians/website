@@ -22,6 +22,7 @@ $blocks = array(
 			</div>
 		</section>
 	</div>
+	<div class="advocacy-video-scroll">Scroll Down<br><i class="fa fa-arrow-down"></i></div>
 	<div class="advocacy-bottom">
 		<section class="advocacy-resources">
 			<div class="container">
