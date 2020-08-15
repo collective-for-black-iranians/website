@@ -71,6 +71,10 @@ footer .credit {
 		nav {
 			display: block;
 			text-align: center;
+
+			li {
+				margin: 0 5px;
+			}
 		}
 
 		.label {
@@ -92,6 +96,5 @@ footer .credit {
 			padding: 20px 0;
 			margin-bottom: 10px;
 		}
-
 	}
 }
