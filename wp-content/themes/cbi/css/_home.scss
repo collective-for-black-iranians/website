@@ -49,7 +49,7 @@ body.home img.logo {
 }
 
 body.home .our-work {
-	background: #fff;
+	background: #EBE7E2;
 	min-height: calc(100vh - 90px - 30px);
 }
 
@@ -59,6 +59,11 @@ body.home .our-work h2 {
 	padding: 15vh 0 10vh 0;
 	font-size: 48px;
 	line-height: 48px;
+}
+
+body.home #content ul li {
+	list-style: none;
+	margin-left: 0;
 }
 
 @media only screen and (max-width: 785px) {
@@ -88,29 +93,75 @@ body.home .our-work h2 {
 
 @media only screen and (max-width: 538px) {
 
-	body.home .scrolly h2 {
-		font-size: 32px;
-		line-height: 45px;
-	}
+	body.home {
 
-	body.home #content {
-		background-size: 50% auto;
-	}
+		#content {
+			background-attachment: scroll;
+			background-position: center calc(50vh - 100px);
+			background-size: 150px auto;
+		}
 
-	body.home .our-work h2 {
-		margin-top: 8vh;
-		font-size: 30px;
-		line-height: 30px;
-	}
+		section.narrow {
+			width: auto;
+			min-height: calc(50vh - 30px);
+			padding-top: 40px;
+		}
 
-	body.home .our-work ul {
-		display: block;
-	}
+		.scrolly h2 {
+			text-align: center;
+			font-size: 32px;
+			line-height: 32px;
+			position: static;
+			margin-top: 50px;
+			width: 100%;
+			transform: none;
+		}
 
-	body.home .our-work li {
-		width: calc(100vw - 30px);
-		height: 80px;
-		margin-bottom: 10px;
-	}
+		section.wide {
+			min-height: 0;
+		}
 
+		section.head-room {
+			margin-top: 0;
+		}
+
+		section.logo {
+			display: none;
+		}
+
+		.our-work {
+			margin-top: 200px;
+			padding-bottom: 30px;
+		}
+
+		.our-work h2 {
+			padding: 50px 0 0 0;
+			margin-top: 100px;
+			font-size: 30px;
+			line-height: 30px;
+			color: #542D2B;
+		}
+
+		.our-work ul {
+			display: block;
+		}
+
+		.our-work-links li {
+			padding: 40px;
+			width: auto;
+		}
+
+		.our-work li a {
+			width: auto;
+			padding: 40px;
+			margin-bottom: 10px;
+		}
+
+		.our-work li .label {
+			color: #542D2B;
+			font-size: 22px;
+			line-height: 28px;
+			padding: 20px;
+		}
+	}
 }

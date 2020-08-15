@@ -13,7 +13,7 @@ get_header();
 	<section class="head-room wide">
 		<img src="<?php asset_url('img/sofreh.png'); ?>" alt="Sofreh">
 	</section>
-	<section class="narrow head-room leg-room">
+	<section class="narrow head-room leg-room logo">
 		<img src="<?php asset_url('img/logo.png'); ?>" alt="Collective For Black Iraninans" class="logo">
 	</section>
 </div>
