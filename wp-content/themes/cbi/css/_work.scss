@@ -144,7 +144,7 @@ body.voices .voices-link-image img {
 body.education {
 	background-color: #f9f7f6;
 	background-repeat: no-repeat;
-	background-image: url("../img/education-bg.jpg");
+	background-image: url("../img/education-bg.gif");
 	background-size: 100vw auto;
 	background-position: bottom;
 	background-attachment: fixed;
@@ -152,6 +152,7 @@ body.education {
 
 body.education .intro {
 	background: #E8E4DC;
+	padding-bottom: 30px;
 }
 
 body.education .videos {
