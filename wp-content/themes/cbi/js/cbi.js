@@ -37,7 +37,7 @@
 		// Resize #content to show full background
 		function bg_resize() {
 			var bg_imgs = {
-				about: 3827 / 1200,
+				about: 6123 / 1920,
 				work: 828 / 1200,
 				voices: 3125 / 1200,
 				contact: 1621 / 1200,
