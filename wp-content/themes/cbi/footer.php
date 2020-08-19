@@ -5,8 +5,8 @@
 						<ul>
 							<li class="label">Follow Us</li>
 							<li class="social twitter"><a href="https://twitter.com/BlackIranians"><i class="fab fa-twitter"></i></a></li>
-							<li class="social instagram"><a href="https://www.instagram.com/collectiveforblackiranians"><i class="fab fa-instagram"></i></a></li>
-							<!-- <li class="social vimeo"><a href="#"><i class="fab fa-vimeo"></i></a></li>-->
+							<li class="social instagram"><a href="https://instagram.com/collectiveforblackiranians?igshid=1a40labi2zidw"><i class="fab fa-instagram"></i></a></li>
+							<li class="social vimeo"><a href="https://vimeo.com/user119758394"><i class="fab fa-vimeo"></i></a></li>
 						</ul>
 					</nav>
 					<div class="bottom">

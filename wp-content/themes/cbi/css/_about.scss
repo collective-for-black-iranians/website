@@ -84,3 +84,27 @@ body.about .image-credit {
 	left: 40px;
 	font-size: 14px;
 }
+
+@media only screen and (max-width: 538px) {
+
+	body.about {
+
+		.tabs nav {
+			background-color: #562E2C;
+			padding-top: 0;
+
+			a {
+				color: #fff;
+				font-size: 16px;
+				font-weight: normal;
+				padding: 15px;
+			}
+
+			.selected {
+				background-image: none;
+			}
+		}
+
+	}
+
+}
