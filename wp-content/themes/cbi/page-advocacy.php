@@ -26,7 +26,7 @@ $blocks = array(
 	<div class="advocacy-bottom">
 		<section class="advocacy-resources">
 			<div class="container">
-				Resources on Dismantling Anti-Blackness in the Iranian American Community
+				Resources on Dismantling Anti-Blackness in the Iranian Diaspora
 				<div class="arrow">
 					<i class="fa fa-chevron-down"></i>
 				</div>
