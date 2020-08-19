@@ -1,31 +1,44 @@
+body.about {
+
+	.tabs nav {
+		background-color: #562E2C;
+		padding-top: 0;
+		display: flex;
+		justify-content: space-between;
+		max-width: 1024px;
+		margin: 0 auto;
+
+		a {
+			color: #fff;
+			font-size: 16px;
+			font-weight: normal;
+			padding: 15px;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.selected {
+			background-image: none;
+		}
+
+		img {
+			width: 17px;
+			height: 26px;
+			margin-top: 15px;
+		}
+	}
+
+}
+
 body.about .tabs {
 	position: relative;
 	background-image: url("../img/about-bg.gif");
 	background-repeat: no-repeat;
 	background-size: 100vw auto;
 	min-height: 100vh;
-}
-
-body.about .tabs nav {
-	display: flex;
-	padding-top: 5vw;
-	justify-content: space-between;
-	max-width: 1024px;
-	margin: 0 auto;
-}
-
-body.about .tabs nav a {
-	text-decoration: none;
-	color: #000;
-	font-size: 36px;
-	font-weight: bold;
-	display: inline-block;
-	padding: 40px;
-}
-
-body.about .tabs nav .selected {
-	background-image: url("../img/paint.png");
-	background-size: 100% 100%;
 }
 
 body.about .block-about-person {
@@ -87,24 +100,6 @@ body.about .image-credit {
 
 @media only screen and (max-width: 538px) {
 
-	body.about {
 
-		.tabs nav {
-			background-color: #562E2C;
-			padding-top: 0;
-
-			a {
-				color: #fff;
-				font-size: 16px;
-				font-weight: normal;
-				padding: 15px;
-			}
-
-			.selected {
-				background-image: none;
-			}
-		}
-
-	}
 
 }

@@ -17,7 +17,9 @@ $sections = array();
 <section class="tabs resize-bg">
 	<nav>
 		<a href="#collective" class="selected">Our Collective</a>
+		<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
 		<a href="#story">Our Story</a>
+		<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
 		<a href="#board">Our Board</a>
 	</nav>
 	<div class="container">
