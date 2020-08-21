@@ -3,6 +3,24 @@ body.work .resize-bg {
 	background-size: 100vw auto;
 }
 
+body.work {
+	.mobile-resize-bg {
+		display: none;
+		background-image: url("../img/work-bg.jpg");
+		background-size: 100vw auto;
+	}
+
+	@include mobile {
+		.mobile-resize-bg {
+			display: block;
+		}
+
+		.desktop-resize-bg {
+			background-image: none;
+		}
+	}
+}
+
 body.work .container {
 	max-width: 700px;
 }
@@ -11,12 +29,21 @@ body.work .page-content {
 	font-size: 18px;
 	line-height: 24px;
 	padding-left: 100px;
+
+	@include mobile {
+		padding-left: 0;
+	}
 }
 
 .our-work-links {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+
+	@include mobile {
+		display: block;
+		margin-bottom: 40px;
+	}
 }
 
 .our-work-links li {
@@ -28,6 +55,12 @@ body.work .page-content {
 body.work .our-work-links li {
 	width: 200px;
 	height: 200px;
+
+	@include mobile {
+		padding: 40px 40px 0 40px;
+		width: auto;
+		margin-bottom: 5px;
+	}
 }
 
 .our-work-links a {

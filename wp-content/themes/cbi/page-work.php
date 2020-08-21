@@ -6,7 +6,7 @@ global $sections;
 $sections = array();
 
 ?>
-<section class="resize-bg">
+<section class="desktop-resize-bg resize-bg">
 	<div class="container">
 		<h2 class="page-title"><?php the_title(); ?></h2>
 		<div class="page-content">
@@ -14,6 +14,7 @@ $sections = array();
 		</div>
 		<?php get_template_part('our-work-links'); ?>
 	</div>
+	<div class="mobile-resize-bg resize-bg"></div>
 </section>
 <?php
 
