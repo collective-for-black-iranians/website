@@ -14,24 +14,25 @@ $sections = array();
 		</div>
 	</div>
 </section>
-<section class="tabs resize-bg">
-	<nav>
-		<a href="#collective" class="selected">Our Collective</a>
-		<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
-		<a href="#story">Our Story</a>
-		<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
-		<a href="#board">Our Board</a>
+<section>
+	<nav class="subnav">
+		<div class="container">
+			<a href="#collective">Our Collective</a>
+			<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
+			<a href="#story">Our Story</a>
+			<img src="<?php asset_url('img/separator.gif'); ?>" alt="">
+			<a href="#board">Our Board</a>
+		</div>
 	</nav>
+</section>
+<section class="resize-bg">
 	<div class="container">
-		<?php
+		<div id="collective" class="blocks">
+			<h3>Our Collective</h3>
+			<?php
 
-		foreach ($sections as $section => $blocks) {
+			foreach ($sections['collective'] as $block) {
 
-			$selected = ($section == 'collective') ? ' selected' : '';
-
-			echo "<div id=\"tab-$section\" class=\"tab$selected\">\n";
-
-			foreach ($blocks as $block) {
 				if ($block['name'] == 'acf/about-person') {
 					include __DIR__ . '/block-about-person.php';
 				} else if ($block['name'] == 'acf/about-text') {
@@ -39,8 +40,37 @@ $sections = array();
 				}
 			}
 
-			echo "</div>\n";
+			?>
+		</div>
+	</div>
+</section>
+<section id="story">
+	<div class="container">
+		<?php
 
+		foreach ($sections['story'] as $block) {
+
+			if ($block['name'] == 'acf/about-person') {
+				include __DIR__ . '/block-about-person.php';
+			} else if ($block['name'] == 'acf/about-text') {
+				include __DIR__ . '/block-about-text.php';
+			}
+		}
+
+		?>
+	</div>
+</section>
+<section id="board">
+	<div class="container">
+		<?php
+
+		foreach ($sections['board'] as $block) {
+
+			if ($block['name'] == 'acf/about-person') {
+				include __DIR__ . '/block-about-person.php';
+			} else if ($block['name'] == 'acf/about-text') {
+				include __DIR__ . '/block-about-text.php';
+			}
 		}
 
 		?>

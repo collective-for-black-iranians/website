@@ -15,25 +15,6 @@
 			}
 		});
 
-		// About page: tab behaviors
-		function update_tabs() {
-			var selected = location.hash.match(/#(.+)$/);
-			if (selected) {
-				var id = selected[1];
-				$('.tab').each(function(i, el) {
-					if ($(el).attr('id') == 'tab-' + id) {
-						$(el).addClass('selected');
-					} else {
-						$(el).removeClass('selected');
-					}
-				});
-				$('.tabs nav a.selected').removeClass('selected');
-				$('.tabs nav a[href="#' + id + '"]').addClass('selected');
-			}
-		}
-		window.onhashchange = update_tabs;
-		update_tabs();
-
 		// Resize #content to show full background
 		function bg_resize() {
 			var bg_imgs = {
@@ -48,12 +29,25 @@
 				if ($(document.body).hasClass(slug)) {
 					var ratio = bg_imgs[slug];
 					var height = width * ratio;
-					$('.resize-bg').css('height', height + 'px');
+					$('.resize-bg').css('min-height', height + 'px');
 				}
 			}
 		}
 		$(window).resize(bg_resize);
 		bg_resize();
+
+		if ($(document.body).hasClass('about')) {
+			function update_page() {
+				var page_width = $(document.body).width();
+				if (page_width < 539) {
+					$('#collective').css('padding-top', $('.resize-bg').height() + 'px');
+				} else {
+					$('#collective').css('padding-top', 0);
+				}
+			}
+			update_page();
+			$(window).resize(update_page);
+		}
 
 		// Our Voices page
 		if ($(document.body).hasClass('voices')) {
