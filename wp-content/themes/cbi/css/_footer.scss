@@ -1,7 +1,9 @@
 footer {
+	position: relative;
 	color: #fff;
 	background: #000;
 	font-size: 16px;
+	z-index: 1;
 }
 
 footer .identity img {
