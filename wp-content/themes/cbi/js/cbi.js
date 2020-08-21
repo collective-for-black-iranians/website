@@ -42,7 +42,7 @@
 				if (page_width < 539) {
 					$('#collective').css('padding-top', $('.resize-bg').height() + 'px');
 				} else {
-					$('#collective').css('padding-top', 0);
+					$('#collective').css('padding-top', '500px');
 				}
 			}
 			update_page();

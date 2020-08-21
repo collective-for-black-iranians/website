@@ -63,6 +63,16 @@ body.about {
 		background-color: #E8E4DC;
 	}
 
+	#collective {
+		h3 {
+			display: none;
+
+			@include mobile {
+				display: block;
+			}
+		}
+	}
+
 	.block-about-person {
 		background: #fff;
 		padding: 20px;
