@@ -25,11 +25,13 @@
 				donate: 875 / 1200
 			};
 			var width = $(document.body).width();
+			var height = null;
 			for (slug in bg_imgs) {
 				if ($(document.body).hasClass(slug)) {
 					var ratio = bg_imgs[slug];
-					var height = width * ratio;
+					height = width * ratio;
 					$('.resize-bg').css('min-height', height + 'px');
+					break;
 				}
 			}
 
@@ -37,7 +39,7 @@
 			if ($(document.body).hasClass('about')) {
 				var page_width = $(document.body).width();
 				if (page_width < 539) {
-					$('#collective').css('padding-top', $('.resize-bg').height() + 'px');
+					$('#collective').css('padding-top', height + 'px');
 				} else {
 					$('#collective').css('padding-top', '500px');
 				}
