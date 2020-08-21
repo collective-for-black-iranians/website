@@ -15,6 +15,7 @@ $blocks = array(
 			<h2 class="page-title"><?php the_title(); ?></h2>
 			<div class="page-content">
 				<?php the_content(); ?>
+				<div class="education-video-scroll"><i class="fa fa-chevron-down"></i></div>
 			</div>
 		</div>
 	</section>
