@@ -4,7 +4,7 @@ acf_form_head();
 get_header();
 
 ?>
-<div id="contact-content" class="resize-bg">
+<div id="contact-content">
 	<section class="contact-intro">
 		<div class="container">
 			<h2 class="page-title"><?php the_title(); ?></h2>
@@ -13,6 +13,7 @@ get_header();
 			</div>
 		</div>
 	</section>
+	<div class="resize-bg"></div>
 	<section id="contact-form" class="contact-form">
 		<div class="container">
 			<?php
