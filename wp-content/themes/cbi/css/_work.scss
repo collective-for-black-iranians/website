@@ -150,11 +150,16 @@ body.voices #voices-content {
 
 body.voices .voices-links {
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 body.voices .block-voices-link {
 	margin-top: 220px;
 	text-align: center;
+
+	@include mobile {
+		margin-top: 100px;
+	}
 }
 
 body.voices .block-voices-link h3 {
