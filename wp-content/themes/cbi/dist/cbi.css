@@ -625,7 +625,7 @@ body.work .mobile-resize-bg {
   body.work .desktop-resize-bg {
     background-image: none; } }
 
-body.work .container {
+body.work section > .container {
   max-width: 700px; }
 
 body.work .page-content {
