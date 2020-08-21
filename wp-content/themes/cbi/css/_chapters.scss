@@ -40,6 +40,15 @@ body.chapters h2 {
 	padding: 40px;
 	background-image: url("../img/paint.png");
 	background-size: 100% 100%;
+
+	@include mobile {
+		& {
+			width: 150px;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 20px;
+		}
+	}
 }
 
 .chapters-form {
@@ -78,8 +87,20 @@ body.chapters h2 {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
+
+	@include mobile {
+		& {
+			display: block;
+		}
+	}
 }
 
 .acf-field[data-name="flex-fields"] .acf-fields .acf-field {
 	width: calc(50% - 20px);
+
+	@include mobile {
+		& {
+			width: auto;
+		}
+	}
 }
