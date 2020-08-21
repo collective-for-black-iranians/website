@@ -217,19 +217,30 @@ body.education .videos {
 }
 
 body.education .books {
-	background-image: url("../img/bg.jpg");
-	background-size: 100vw auto;
+	background: #E8E4DC;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .books-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+
+	@include mobile {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 
 .block-education-book {
-	width: calc(33% - 25px);
+	width: calc(33% - 11px);
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.block-education-book:nth-child(3n+3) {
+	margin-right: 0;
 }
 
 .advocacy-intro {
