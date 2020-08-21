@@ -32,12 +32,9 @@
 					$('.resize-bg').css('min-height', height + 'px');
 				}
 			}
-		}
-		$(window).resize(bg_resize);
-		bg_resize();
 
-		if ($(document.body).hasClass('about')) {
-			function update_page() {
+			// Mobile vs. Desktop collective
+			if ($(document.body).hasClass('about')) {
 				var page_width = $(document.body).width();
 				if (page_width < 539) {
 					$('#collective').css('padding-top', $('.resize-bg').height() + 'px');
@@ -45,9 +42,9 @@
 					$('#collective').css('padding-top', '500px');
 				}
 			}
-			update_page();
-			$(window).resize(update_page);
 		}
+		$(window).resize(bg_resize);
+		bg_resize();
 
 		// Our Voices page
 		if ($(document.body).hasClass('voices')) {
