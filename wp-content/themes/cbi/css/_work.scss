@@ -305,6 +305,12 @@ body.advocacy {
 	margin: 20px auto 0 auto;
 	text-align: center;
 	height: 395px;
+
+	@include mobile {
+		& {
+			padding: 0 15px;
+		}
+	}
 }
 
 .block-advocacy-video h3 {
@@ -318,6 +324,13 @@ body.advocacy {
 	font-size: 24px;
 	line-height: 30px;
 	text-align: left;
+
+	@include mobile {
+		& {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
 }
 
 .advocacy-video-embed {
@@ -355,6 +368,12 @@ body.advocacy {
 	transform: translateY(-50%);
 	font-size: 30px;
 	cursor: pointer;
+
+	@include mobile {
+		& {
+			left: -10px;
+		}
+	}
 }
 
 .advocacy-video-next {
@@ -364,12 +383,18 @@ body.advocacy {
 	transform: translateY(-50%);
 	font-size: 30px;
 	cursor: pointer;
+
+	@include mobile {
+		& {
+			right: -10px;
+		}
+	}
 }
 
 .advocacy-video-scroll {
 	color: #fff;
 	position: fixed;
-	bottom: 40px;
+	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
@@ -385,10 +410,22 @@ body.advocacy {
 .facts-container {
 	display: flex;
 	justify-content: space-between;
+
+	@include mobile {
+		& {
+			display: block;
+		}
+	}
 }
 
 .block-advocacy-fact {
 	width: calc(25% - 20px);
+
+	@include mobile {
+		& {
+			width: auto;
+		}
+	}
 }
 
 .advocacy-messages {
@@ -403,15 +440,33 @@ body.advocacy {
 .messages-container {
 	display: flex;
 	flex-flow: row wrap;
+
+	@include mobile {
+		& {
+			display: block;
+		}
+	}
 }
 
 .block-advocacy-message {
 	width: calc(33%);
 	margin-bottom: 40px;
+
+	@include mobile {
+		& {
+			width: auto;
+		}
+	}
 }
 
 .block-advocacy-message:nth-child(2n+1) {
 	margin-right: 33%;
+
+	@include mobile {
+		& {
+			margin-right: 0;
+		}
+	}
 }
 
 .advocacy-call {
@@ -427,13 +482,29 @@ body.advocacy {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+
+	@include mobile {
+		& {
+			display: block;
+		}
+	}
 }
 
 .advocacy-call-column {
 	width: calc(50% - 40px);
+
+	@include mobile {
+		& {
+			width: auto;
+		}
+	}
 }
 
 .block-advocacy-call h3 {
 	font-weight: normal;
 	letter-spacing: 0;
+}
+
+.block-advocacy-call .text-body {
+	margin-bottom: 30px;
 }
