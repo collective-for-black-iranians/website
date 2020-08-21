@@ -594,7 +594,7 @@ body.donate .page-content a.button {
   margin-left: 0; }
 
 body.donate .resize-bg {
-  background-image: url("../img/donate-bg.jpg");
+  background-image: url("../img/donate-bg.gif");
   background-size: 100vw auto; }
 
 body.donate .fixed {
